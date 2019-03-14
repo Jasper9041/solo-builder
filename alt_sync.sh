@@ -48,7 +48,8 @@ cp sources/base/setup-environment .
 
 echo "----------------------------------------------------------------------------"
 mkdir -p sources/meta-3dr
-git clone git://github.com/OpenSolo/meta-3dr sources/meta-3dr 2>&1 |  grep -v 'fatal'
+# git clone git://github.com/OpenSolo/meta-3dr sources/meta-3dr 2>&1 |  grep -v 'fatal'
+git clone git://github.com/Jasper9041/meta-3dr sources/meta-3dr 2>&1 |  grep -v 'fatal'
 cd sources/meta-3dr
 git fetch
 echo git checkout $name 2>&1
