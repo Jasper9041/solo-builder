@@ -84,6 +84,9 @@ then
     echo "...controller clean finished"
 fi
     
+MACHINE=imx6solo-3dr-artoo bitbake linux-imx -c clean
+MACHINE=imx6solo-3dr-1080p bitbake linux-imx -c clean
+
     
 MACHINE=imx6solo-3dr-1080p bitbake 3dr-solo
 if [ ! $? -eq 0 ]
